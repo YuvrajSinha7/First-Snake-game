@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="blob shape1"></div>
+        <div class="blob shape2"></div>
+        <div class="blob shape3"></div>
+    </div>
+    <div class="game-container glass">
+        <header>
+            <h1>Neon Snake</h1>
+            <div class="score-board">
+                <p>Score: <span id="score">0</span></p>
+                <p>High Score: <span id="high-score">0</span></p>
+            </div>
+        </header>
+
+        <main>
+            <div class="canvas-container">
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                <div id="game-overlay" class="overlay hidden">
+                    <h2 id="overlay-text">Game Over</h2>
+                    <p id="overlay-score">Score: 0</p>
+                    <button id="restart-btn" class="glow-on-hover">Play Again</button>
+                </div>
+                <div id="start-overlay" class="overlay">
+                    <h2>Ready?</h2>
+                    <p>Use Arrow Keys to move</p>
+                    <button id="start-btn" class="glow-on-hover">Start Game</button>
+                </div>
+            </div>
+        </main>
+        
+        <div class="controls-hint">
+            <p>Use keyboard arrows (↑, ↓, ←, →) or WASD to control the snake</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
